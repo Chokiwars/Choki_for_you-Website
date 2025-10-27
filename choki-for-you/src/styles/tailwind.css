@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core Colors */
+    --color-background: #FEFEFE; /* Pure canvas for artwork presentation */
+    --color-foreground: #1F2937; /* Clear reading for extended content */
+    --color-border: #E5E7EB; /* Light gray for subtle separation */
+    --color-input: #F8FAFC; /* Subtle depth without distraction */
+    --color-ring: #A78BFA; /* Softer purple for focus states */
+    
+    /* Card Colors */
+    --color-card: #FFFFFF; /* Pure white for content cards */
+    --color-card-foreground: #1F2937; /* Clear reading for card content */
+    
+    /* Popover Colors */
+    --color-popover: #FFFFFF; /* Pure white for popover backgrounds */
+    --color-popover-foreground: #1F2937; /* Clear reading for popover content */
+    
+    /* Muted Colors */
+    --color-muted: #F8FAFC; /* Subtle depth without distraction */
+    --color-muted-foreground: #6B7280; /* Hierarchy without harsh contrast */
+    
+    /* Brand Primary Colors */
+    --color-primary: #6B46C1; /* Core purple brand authority and trust */
+    --color-primary-foreground: #FFFFFF; /* White text on purple backgrounds */
+    
+    /* Brand Secondary Colors */
+    --color-secondary: #A78BFA; /* Softer purple for approachable interactions */
+    --color-secondary-foreground: #1F2937; /* Dark text on light purple */
+    
+    /* Accent Colors */
+    --color-accent: #F59E0B; /* Warm gold for special highlights */
+    --color-accent-foreground: #FFFFFF; /* White text on gold backgrounds */
+    
+    /* Destructive Colors */
+    --color-destructive: #EF4444; /* Helpful guidance for form issues */
+    --color-destructive-foreground: #FFFFFF; /* White text on red backgrounds */
+    
+    /* Success Colors */
+    --color-success: #10B981; /* Positive confirmation for purchases */
+    --color-success-foreground: #FFFFFF; /* White text on green backgrounds */
+    
+    /* Warning Colors */
+    --color-warning: #F59E0B; /* Gentle urgency for limited pieces */
+    --color-warning-foreground: #FFFFFF; /* White text on warning backgrounds */
+    
+    /* Error Colors */
+    --color-error: #EF4444; /* Helpful guidance for form issues */
+    --color-error-foreground: #FFFFFF; /* White text on error backgrounds */
+    
+    /* Purple Brand Spectrum */
+    --color-purple-light: #E6E6FA; /* Lavender for subtle backgrounds */
+    --color-purple-medium: #DDA0DD; /* Plum for approachable elements */
+    --color-purple-deep: #8A2BE2; /* Blue violet for brand authority */
+    --color-purple-electric: #7C3AED; /* Electric purple for CTAs */
+    --color-purple-dark: #2D1B69; /* Dark purple for text hierarchy */
+    
+    /* Surface Colors */
+    --color-surface: #F8FAFC; /* Subtle depth without distraction */
+    --color-surface-foreground: #1F2937; /* Clear reading on surface */
+    
+    /* Text Hierarchy */
+    --color-text-primary: #1F2937; /* Clear reading for extended content */
+    --color-text-secondary: #6B7280; /* Hierarchy without harsh contrast */
+    
+    /* Gradient Variables */
+    --gradient-curious: linear-gradient(135deg, #E6E6FA 0%, #DDA0DD 100%);
+    --gradient-connected: linear-gradient(135deg, #8A2BE2 0%, #4B0082 100%);
+    --gradient-hero: linear-gradient(135deg, #E6E6FA 0%, #8A2BE2 100%);
+    --gradient-cta: linear-gradient(45deg, #8A2BE2, #9370DB);
+    
+    /* Shadow Variables */
+    --shadow-purple: 0 4px 20px rgba(107, 70, 193, 0.1);
+    --shadow-purple-hover: 0 0 20px rgba(138, 43, 226, 0.4);
+    --shadow-subtle: 0 1px 3px rgba(0, 0, 0, 0.1);
+    
+    /* Border Radius */
+    --radius: 8px;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+@layer components {
+  .purple-gradient-bg {
+    background: var(--gradient-hero);
+  }
+  
+  .purple-cta-gradient {
+    background: var(--gradient-cta);
+  }
+  
+  .purple-shadow {
+    box-shadow: var(--shadow-purple);
+  }
+  
+  .purple-hover-glow {
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+  
+  .purple-hover-glow:hover {
+    transform: scale(1.05);
+    box-shadow: var(--shadow-purple-hover);
+  }
+  
+  .text-gradient-purple {
+    background: linear-gradient(135deg, #8A2BE2, #6B46C1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
