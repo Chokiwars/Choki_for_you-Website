@@ -12,27 +12,35 @@ const HeroSection = () => {
   {
     id: 1,
     title: "Sonhos Violetas",
-    image: "https://images.unsplash.com/photo-1710518828990-65eacc5313ca",
-    alt: "Abstract purple and violet swirls painting with flowing organic shapes on canvas",
+    image: "https://i.pinimg.com/736x/34/77/f5/3477f5bc16cda74b0b05fcdaacd9c0ff.jpg",
+    alt: "Um gato sob a luz do luar numa maravilhosa noite estrelada roxa",
     price: "R$ 2.500,00",
-    description: "Uma explosão de criatividade em tons roxos que desperta a alma"
+    description: "Um gato sob a luz do luar numa maravilhosa noite estrelada roxa"
   },
   {
     id: 2,
-    title: "Reflexões Douradas",
-    image: "https://images.unsplash.com/photo-1480536229793-bfa19f66fb50",
-    alt: "Golden abstract painting with purple accents and metallic textures on dark background",
-    price: "R$ 3.200,00",
-    description: "Onde o ouro encontra o roxo em perfeita harmonia"
+    title: "Bem me quer, Mal me quer",
+    image: "https://57f24e445b.cbaul-cdnwnd.com/38a00c7c7576a2c66768ffa797741dd9/system_preview_detail_200000089-bd289bf1bf/rosa%20roxa%201.jpg",
+    price: "R$ 1.500,00",
+    description: "Rosa tão perfeita como o mais doce violeta"
   },
   {
     id: 3,
-    title: "Universo Interior",
-    image: "https://images.unsplash.com/photo-1728160641449-e64ea3e7f7ab",
-    alt: "Cosmic purple nebula painting with stars and galaxy swirls in deep space theme",
-    price: "R$ 4.100,00",
+    title: "Oceano Roxo",
+    image: "https://i.pinimg.com/736x/5e/9a/93/5e9a93c4d90c5d89b34f8877436c7268.jpg",
+    alt: "Um oceano sendo carregado pelas ondas da imaginação",
+    price: "R$ 3.500,00",
     description: "Uma jornada através das galáxias da imaginação"
-  }];
+  },
+  {
+    id: 4,
+    title: "Particulas Roxas",
+    image: "https://cdn.pixabay.com/photo/2014/04/04/21/56/bokeh-313993_640.jpg",
+    alt: "Particulas roxas voando no ar",
+    price: "R$ 1.000,00",
+    description: "Particulas roxas no ar"
+  }
+];
 
 
   useEffect(() => {
