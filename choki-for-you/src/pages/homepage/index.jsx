@@ -17,11 +17,10 @@ const Homepage = () => {
   return (
     <>
       <Helmet>
-        <title>Choki For You Official - Arte Roxa que Fala à Sua Alma</title>
+        <title>Choki For You Official</title>
         <meta 
           name="description" 
-          content="Descubra o universo roxo da artista Choki. Obras originais, comissões personalizadas e arte que transforma espaços. Criando arte especialmente para você há mais de 5 anos." 
-        />
+          content="Descubra o universo roxo da artista Choki. Obras originais, comissões personalizadas e arte que transforma espaços. Criando arte especialmente para você há mais de 5 anos." />
         <meta name="keywords" content="arte roxa, pintura original, comissões personalizadas, artista brasileira, Choki, arte contemporânea, decoração, galeria online" />
         <meta property="og:title" content="Choki For You Official - Arte Roxa que Fala à Sua Alma" />
         <meta property="og:description" content="Descubra o universo roxo da artista Choki. Obras originais, comissões personalizadas e arte que transforma espaços." />
