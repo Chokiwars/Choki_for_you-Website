@@ -4,6 +4,12 @@ import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
 import Icon from '../../../components/AppIcon';
 
+// Importando imagens locais
+import AkiraOnFire from '../../../assets/artworks/Akira_on_fire.jpeg';
+import SombraAkiraChoi from '../../../assets/artworks/Sombra_Akira_choi.jpeg';
+import AnyDtiys from '../../../assets/artworks/Any_dtiys.jpeg';
+import SombraAkiraShakan from '../../../assets/artworks/Sombra_Akira_shakan.jpeg';
+
 const HeroSection = () => {
   const [currentArtworkIndex, setCurrentArtworkIndex] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -11,34 +17,31 @@ const HeroSection = () => {
   const featuredArtworks = [
   {
     id: 1,
-    title: "Sonhos Violetas",
-    image: "https://i.pinimg.com/736x/34/77/f5/3477f5bc16cda74b0b05fcdaacd9c0ff.jpg",
-    alt: "Um gato sob a luz do luar numa maravilhosa noite estrelada roxa",
-    price: "R$ 2.500,00",
-    description: "Um gato sob a luz do luar numa maravilhosa noite estrelada roxa"
+    title: "Akira",
+    image: AkiraOnFire,
+    price: "EXCLUSIVE",
+    description: "Akira em meio às chamas, pronta para a ação!"
   },
   {
     id: 2,
-    title: "Bem me quer, Mal me quer",
-    image: "https://57f24e445b.cbaul-cdnwnd.com/38a00c7c7576a2c66768ffa797741dd9/system_preview_detail_200000089-bd289bf1bf/rosa%20roxa%201.jpg",
-    price: "R$ 1.500,00",
-    description: "Rosa tão perfeita como o mais doce violeta"
+    title: "Isso foi apenas um aviso!",
+    image: SombraAkiraShakan,
+    price: "EXCLUSIVE",
+    description: "Há algo mais sombrio por trás... tome cuidado!",
   },
   {
     id: 3,
-    title: "Oceano Roxo",
-    image: "https://i.pinimg.com/736x/5e/9a/93/5e9a93c4d90c5d89b34f8877436c7268.jpg",
-    alt: "Um oceano sendo carregado pelas ondas da imaginação",
-    price: "R$ 3.500,00",
-    description: "Uma jornada através das galáxias da imaginação"
+    title: "Um DTIYS aleatório",
+    image: AnyDtiys,
+    price: "EXCLUSIVE",
+    description: "Uma arte feita para o desafio DTIYS (Draw This In Your Style)"
   },
   {
     id: 4,
-    title: "Particulas Roxas",
-    image: "https://cdn.pixabay.com/photo/2014/04/04/21/56/bokeh-313993_640.jpg",
-    alt: "Particulas roxas voando no ar",
-    price: "R$ 1.000,00",
-    description: "Particulas roxas no ar"
+    title: "Preso ou Surpreso?",
+    image: SombraAkiraChoi,
+    price: "EXCLUSIVE",
+    description: "Akira mostrando quem é que manda no pedaço"
   }
 ];
 
@@ -114,15 +117,15 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">150+</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">1500+</div>
                 <div className="text-sm text-white/80 font-body">Obras Criadas</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">89</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">8</div>
                 <div className="text-sm text-white/80 font-body">Clientes Felizes</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">5</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">+10</div>
                 <div className="text-sm text-white/80 font-body">Anos de Arte</div>
               </div>
             </div>
@@ -199,15 +202,13 @@ const HeroSection = () => {
                 <Icon name="Sparkles" size={20} color="white" />
               </div>
               
-              <div className="absolute -bottom-4 -left-4 bg-purple-electric rounded-full p-3 shadow-lg">
-                <Icon name="Brush" size={20} color="white" />
-              </div>
+              
             </div>
           </div>
         </div>
       </div>
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="flex flex-col items-center space-y-2 text-white/80">
           <span className="text-sm font-body">Descubra Mais</span>
           <Icon name="ChevronDown" size={24} />
