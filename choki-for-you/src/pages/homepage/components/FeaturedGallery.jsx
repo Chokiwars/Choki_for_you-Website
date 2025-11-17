@@ -4,6 +4,19 @@ import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
 import Icon from '../../../components/AppIcon';
 
+// Importando imagens locais
+import AkiraOnFire from '../../../assets/artworks/Akira_on_fire.jpeg';
+import SombraAkiraChoi from '../../../assets/artworks/Sombra_Akira_choi.jpeg';
+import AnyDtiys from '../../../assets/artworks/Any_dtiys.jpeg';
+import SombraAkiraShakan from '../../../assets/artworks/Sombra_Akira_shakan.jpeg';
+import AkiraOnWater from '../../../assets/artworks/AkiraOnWater.jpeg';
+import Flowers from '../../../assets/artworks/Flowers_goretober.jpeg';
+// import  from '../../../assets/artworks/';
+// import  from '../../../assets/artworks/';
+// import  from '../../../assets/artworks/';
+// import  from '../../../assets/artworks/';
+// import  from '../../../assets/artworks/';
+
 const FeaturedGallery = () => {
   const [hoveredArtwork, setHoveredArtwork] = useState(null);
 
@@ -12,7 +25,7 @@ const FeaturedGallery = () => {
     id: 1,
     title: "Metamorfose Roxa",
     category: "Abstrato",
-    image: "https://images.unsplash.com/photo-1724661046620-7245d9c2eaba",
+    image: AkiraOnWater,
     alt: "Abstract purple butterfly transformation painting with flowing organic shapes and gradient colors",
     price: "R$ 1.800,00",
     status: "available",
@@ -22,7 +35,7 @@ const FeaturedGallery = () => {
     id: 2,
     title: "Jardim Secreto",
     category: "Natureza",
-    image: "https://images.unsplash.com/photo-1504945589958-5613360f107f",
+    image: AkiraOnFire,
     alt: "Purple flower garden painting with lavender blooms and mystical lighting effects",
     price: "R$ 2.200,00",
     status: "available",
@@ -32,7 +45,7 @@ const FeaturedGallery = () => {
     id: 3,
     title: "Cosmos Infinito",
     category: "Espacial",
-    image: "https://images.unsplash.com/photo-1733667831159-6067b3135af9",
+    image: AnyDtiys,
     alt: "Deep space nebula painting with purple and pink cosmic clouds and distant stars",
     price: "R$ 3.500,00",
     status: "sold",
@@ -42,7 +55,7 @@ const FeaturedGallery = () => {
     id: 4,
     title: "Reflexões Urbanas",
     category: "Urbano",
-    image: "https://images.unsplash.com/photo-1719709273008-b0f560237379",
+    image: SombraAkiraChoi,
     alt: "Urban cityscape painting with purple neon lights reflecting on wet streets at night",
     price: "R$ 2.800,00",
     status: "available",
@@ -52,7 +65,7 @@ const FeaturedGallery = () => {
     id: 5,
     title: "Alma Feminina",
     category: "Retrato",
-    image: "https://images.unsplash.com/photo-1554783763-7527cf85de6c",
+    image: Flowers,
     alt: "Portrait painting of woman with flowing purple hair and ethereal expression in soft lighting",
     price: "R$ 4.200,00",
     status: "available",
@@ -62,7 +75,7 @@ const FeaturedGallery = () => {
     id: 6,
     title: "Ondas de Emoção",
     category: "Abstrato",
-    image: "https://images.unsplash.com/photo-1644697131515-de8286392ec3",
+    image: SombraAkiraShakan,
     alt: "Abstract wave painting with purple and gold flowing patterns representing emotional movement",
     price: "R$ 1.950,00",
     status: "available",
