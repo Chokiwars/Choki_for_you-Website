@@ -25,16 +25,17 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Instagram', icon: 'Instagram', url: 'https://instagram.com/choki_for_you', followers: '12.5K' },
-    { name: 'Facebook', icon: 'Facebook', url: 'https://facebook.com/chokiforyou', followers: '8.2K' },
-    { name: 'Pinterest', icon: 'Image', url: 'https://pinterest.com/chokiart', followers: '15.8K' },
-    { name: 'YouTube', icon: 'Play', url: 'https://youtube.com/chokiart', followers: '3.1K' }
+    { name: 'Pinterest', icon: 'Pin', url: 'https://pinterest.com/chokiart', followers: '15.8K' },
+    { name: 'Twitter', icon: 'Twitter', url: 'https://cara.app/chokiforyou/all', followers: '3.1K' },
+    { name: 'YouTube', icon: 'Youtube', url: 'https://www.youtube.com/@Choki_for_you', followers: '3.1K' },
+    { name: 'Github', icon: 'Github', url: 'https://github.com/Chokiwars', followers: '8.2K' },
   ];
 
   const contactInfo = [
-    { icon: 'Mail', text: 'contato@chokiforyou.com.br', type: 'email' },
+    { icon: 'Mail', text: 'chokiforyou@gmail.com', type: 'email' },
     { icon: 'Phone', text: '+55 (11) 99999-9999', type: 'phone' },
     { icon: 'MapPin', text: 'São Paulo, SP - Brasil', type: 'location' },
-    { icon: 'Clock', text: 'Seg-Sex: 9h às 18h', type: 'hours' }
+    { icon: 'Clock', text: 'Seg-Sex: 10h às 20h', type: 'hours' }
   ];
 
   return (
