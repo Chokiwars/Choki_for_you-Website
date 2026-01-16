@@ -25,7 +25,7 @@ const Footer = () => {
 
   const socialLinks = [
     { name: 'Instagram', icon: 'Instagram', url: 'https://instagram.com/choki_for_you', followers: '12.5K' },
-    { name: 'Pinterest', icon: 'Pin', url: 'https://pinterest.com/chokiart', followers: '15.8K' },
+    { name: 'Pinterest', icon: 'Pin', url: 'https://br.pinterest.com/chokiforyou/', followers: '15.8K' },
     { name: 'Twitter', icon: 'Twitter', url: 'https://cara.app/chokiforyou/all', followers: '3.1K' },
     { name: 'YouTube', icon: 'Youtube', url: 'https://www.youtube.com/@Choki_for_you', followers: '3.1K' },
     { name: 'Github', icon: 'Github', url: 'https://github.com/Chokiwars', followers: '8.2K' },
