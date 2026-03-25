@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import Image from '../../../components/AppImage';
 import Icon from '../../../components/AppIcon';
 
+import SemFoto from '../../../assets/semfoto.png';
+import SemImagem from '../../../assets/semimagem.png';
+
 const TestimonialsSection = () => {
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [isVisible, setIsVisible] = useState(false);
@@ -11,11 +14,11 @@ const TestimonialsSection = () => {
     id: 1,
     name: "Maria Silva",
     location: "São Paulo, SP",
-    avatar: "https://images.unsplash.com/photo-1665023021123-71ba5e860b2d",
+    avatar: SemFoto,
     avatarAlt: "Professional headshot of smiling woman with brown hair in white blouse",
     rating: 5,
     text: `A obra da Choki transformou completamente minha sala de estar. As cores roxas trazem uma energia única e todos os visitantes ficam encantados. É mais que uma pintura, é uma experiência emocional que vivo todos os dias.`,
-    artwork: "https://images.unsplash.com/photo-1728488444676-9f4035cb8d81",
+    artwork: SemImagem,
     artworkAlt: "Purple abstract painting hanging on white wall in modern living room",
     purchaseType: "Obra Original",
     date: "Outubro 2024"
@@ -24,11 +27,11 @@ const TestimonialsSection = () => {
     id: 2,
     name: "Carlos Mendes",
     location: "Rio de Janeiro, RJ",
-    avatar: "https://images.unsplash.com/photo-1585066047759-3438c34cf676",
+    avatar: SemFoto,
     avatarAlt: "Professional headshot of middle-aged man with beard in dark suit",
     rating: 5,
     text: `Encomendei uma peça personalizada para meu escritório e o resultado superou todas as expectativas. A Choki conseguiu capturar exatamente a essência que eu queria transmitir. O processo foi incrível, desde a primeira conversa até a entrega.`,
-    artwork: "https://images.unsplash.com/photo-1627422541102-8809a3ba9396",
+    artwork: SemImagem,
     artworkAlt: "Custom purple and gold abstract painting displayed in modern office space",
     purchaseType: "Comissão Personalizada",
     date: "Setembro 2024"
@@ -37,11 +40,11 @@ const TestimonialsSection = () => {
     id: 3,
     name: "Ana Costa",
     location: "Belo Horizonte, MG",
-    avatar: "https://images.unsplash.com/photo-1643206687509-e152509f8eca",
+    avatar: SemFoto,
     avatarAlt: "Professional headshot of young woman with long dark hair smiling at camera",
     rating: 5,
     text: `Comprei três obras da série 'Universo Roxo' e cada uma conta uma história diferente. A qualidade é excepcional e o atendimento da Choki é muito carinhoso. Ela realmente se importa com cada cliente e cada obra que cria.`,
-    artwork: "https://images.unsplash.com/photo-1677623395283-a9bcc5bd4345",
+    artwork: SemImagem,
     artworkAlt: "Three purple cosmic paintings arranged on bedroom wall above bed",
     purchaseType: "Coleção Completa",
     date: "Agosto 2024"
@@ -50,11 +53,11 @@ const TestimonialsSection = () => {
     id: 4,
     name: "Roberto Lima",
     location: "Brasília, DF",
-    avatar: "https://images.unsplash.com/photo-1708617451137-f94b1c4c4dc5",
+    avatar: SemFoto,
     avatarAlt: "Professional headshot of man with glasses and friendly smile in business attire",
     rating: 5,
     text: `A arte da Choki trouxe vida para nossa clínica. Os pacientes sempre comentam sobre as obras roxas que decoram o ambiente. É incrível como a arte pode influenciar positivamente o humor e a energia de um espaço.`,
-    artwork: "https://images.unsplash.com/photo-1727778989093-a1522ef8de96",
+    artwork: SemImagem,
     artworkAlt: "Purple abstract artwork displayed in modern medical clinic waiting room",
     purchaseType: "Decoração Comercial",
     date: "Julho 2024"
