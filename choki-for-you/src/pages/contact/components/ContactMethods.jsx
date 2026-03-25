@@ -8,7 +8,7 @@ const ContactMethods = () => {
       id: 1,
       title: "Email Direto",
       description: "Para consultas gerais, orçamentos e informações sobre obras",
-      email: "contato@chokiforyou.com.br",
+      email: "chokiforyou@gmail.com",
       icon: "Mail",
       color: "bg-purple-deep",
       responseTime: "Resposta em até 24 horas"
