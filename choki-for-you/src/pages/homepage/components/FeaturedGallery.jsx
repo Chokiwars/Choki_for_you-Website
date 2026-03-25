@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
@@ -16,6 +16,7 @@ import Flowers from '../../../assets/artworks/Flowers_goretober.jpeg';
 // import  from '../../../assets/artworks/';
 // import  from '../../../assets/artworks/';
 // import  from '../../../assets/artworks/';
+import SemImagem from '../../../assets/semimagem.png';
 
 const FeaturedGallery = () => {
   const [hoveredArtwork, setHoveredArtwork] = useState(null);
@@ -25,7 +26,7 @@ const FeaturedGallery = () => {
     id: 1,
     title: "Metamorfose Roxa",
     category: "Abstrato",
-    image: AkiraOnWater,
+    image: SemImagem, //AkiraOnWater
     alt: "Abstract purple butterfly transformation painting with flowing organic shapes and gradient colors",
     price: "R$ 1.800,00",
     status: "available",
@@ -35,7 +36,7 @@ const FeaturedGallery = () => {
     id: 2,
     title: "Jardim Secreto",
     category: "Natureza",
-    image: AkiraOnFire,
+    image: SemImagem, //AkiraOnFire
     alt: "Purple flower garden painting with lavender blooms and mystical lighting effects",
     price: "R$ 2.200,00",
     status: "available",
@@ -45,7 +46,7 @@ const FeaturedGallery = () => {
     id: 3,
     title: "Cosmos Infinito",
     category: "Espacial",
-    image: AnyDtiys,
+    image: SemImagem, //AnyDtiys
     alt: "Deep space nebula painting with purple and pink cosmic clouds and distant stars",
     price: "R$ 3.500,00",
     status: "sold",
@@ -55,7 +56,7 @@ const FeaturedGallery = () => {
     id: 4,
     title: "Reflexões Urbanas",
     category: "Urbano",
-    image: SombraAkiraChoi,
+    image: SemImagem, //SombraAkiraChoi
     alt: "Urban cityscape painting with purple neon lights reflecting on wet streets at night",
     price: "R$ 2.800,00",
     status: "available",
@@ -65,7 +66,7 @@ const FeaturedGallery = () => {
     id: 5,
     title: "Alma Feminina",
     category: "Retrato",
-    image: Flowers,
+    image: SemImagem, //Flowers
     alt: "Portrait painting of woman with flowing purple hair and ethereal expression in soft lighting",
     price: "R$ 4.200,00",
     status: "available",
@@ -75,7 +76,7 @@ const FeaturedGallery = () => {
     id: 6,
     title: "Ondas de Emoção",
     category: "Abstrato",
-    image: SombraAkiraShakan,
+    image: SemImagem, //SombraAkiraShakan
     alt: "Abstract wave painting with purple and gold flowing patterns representing emotional movement",
     price: "R$ 1.950,00",
     status: "available",
