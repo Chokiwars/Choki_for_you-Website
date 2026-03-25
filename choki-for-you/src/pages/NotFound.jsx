@@ -9,40 +9,60 @@ const NotFound = () => {
   const handleGoHome = () => {
     navigate('/');
   };
-
+  
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-background p-4">
-      <div className="text-center max-w-md">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-purple-900 via-purple-700 to-purple-500 relative overflow-hidden p-4">
+      
+      {/* Glow Background */}
+      <div className="absolute top-20 left-10 w-40 h-40 bg-purple-400/20 rounded-full blur-2xl animate-pulse"></div>
+      <div className="absolute bottom-20 right-10 w-60 h-60 bg-pink-400/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
+
+      <div className="relative z-10 text-center max-w-md bg-white/10 backdrop-blur-md rounded-2xl p-8 shadow-xl border border-white/20">
+        
+        {/* 404 estilizado */}
         <div className="flex justify-center mb-6">
-          <div className="relative">
-            <h1 className="text-9xl font-bold text-primary opacity-20">404</h1>
-          </div>
+          <h1 className="text-8xl font-bold bg-gradient-to-r from-pink-300 to-purple-200 bg-clip-text text-transparent drop-shadow-lg">
+            404
+          </h1>
         </div>
 
-        <h2 className="text-2xl font-medium text-onBackground mb-2">Page Not Found</h2>
-        <p className="text-onBackground/70 mb-8">
-          The page you're looking for doesn't exist. Let's get you back!
+        {/* Texto */}
+        <h2 className="text-2xl font-semibold text-white mb-2">
+          Página não encontrada 😿
+        </h2>
+
+        <p className="text-white/80 mb-8 leading-relaxed">
+          Parece que você se perdeu no universo da Choki...  
+          mas calma, eu te ajudo a voltar 💜✨
         </p>
 
+        {/* Botões */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
-            variant="primary"
-            icon={<Icon name="ArrowLeft" />}
+            variant="default"
+            iconName="ArrowLeft"
             iconPosition="left"
             onClick={() => window.history?.back()}
+            className="bg-white text-purple-800 hover:bg-white/90 shadow-lg"
           >
-            Go Back
+            Voltar
           </Button>
 
           <Button
             variant="outline"
-            icon={<Icon name="Home" />}
+            iconName="Home"
             iconPosition="left"
-            onClick={handleGoHome}
+            onClick={() => navigate('/')}
+            className="border-white text-white hover:bg-white hover:text-purple-800"
           >
-            Back to Home
+            Ir para Home
           </Button>
         </div>
+
+        {/* Detalhezinho artístico */}
+        <p className="mt-6 text-xs text-white/60">
+          ✦ Choki_for_you ✦
+        </p>
       </div>
     </div>
   );
