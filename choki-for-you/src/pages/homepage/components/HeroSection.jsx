@@ -9,6 +9,7 @@ import AkiraOnFire from '../../../assets/artworks/Akira_on_fire.jpeg';
 import SombraAkiraChoi from '../../../assets/artworks/Sombra_Akira_choi.jpeg';
 import AnyDtiys from '../../../assets/artworks/Any_dtiys.jpeg';
 import SombraAkiraShakan from '../../../assets/artworks/Sombra_Akira_shakan.jpeg';
+import SemImagem from '../../../assets/semimagem.png';
 
 const HeroSection = () => {
   const [currentArtworkIndex, setCurrentArtworkIndex] = useState(0);
@@ -18,28 +19,28 @@ const HeroSection = () => {
   {
     id: 1,
     title: "Akira",
-    image: AkiraOnFire,
+    image: SemImagem, //AkiraOnFire
     price: "EXCLUSIVE",
     description: "Akira em meio às chamas, pronta para a ação!"
   },
   {
     id: 2,
     title: "Isso foi apenas um aviso!",
-    image: SombraAkiraShakan,
+    image: SemImagem, //SombraAkiraShakan
     price: "EXCLUSIVE",
     description: "Há algo mais sombrio por trás... tome cuidado!",
   },
   {
     id: 3,
     title: "Um DTIYS aleatório",
-    image: AnyDtiys,
+    image: SemImagem, //AnyDtiys
     price: "EXCLUSIVE",
     description: "Uma arte feita para o desafio DTIYS (Draw This In Your Style)"
   },
   {
     id: 4,
     title: "Preso ou Surpreso?",
-    image: SombraAkiraChoi,
+    image: SemImagem, //SombraAkiraChoi
     price: "EXCLUSIVE",
     description: "Akira mostrando quem é que manda no pedaço"
   }
@@ -117,15 +118,15 @@ const HeroSection = () => {
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6 pt-8 border-t border-white/20">
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">1500+</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">2500+</div>
                 <div className="text-sm text-white/80 font-body">Obras Criadas</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">8</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">100+</div>
                 <div className="text-sm text-white/80 font-body">Clientes Felizes</div>
               </div>
               <div className="text-center">
-                <div className="text-2xl font-heading font-heading-bold text-white">+10</div>
+                <div className="text-2xl font-heading font-heading-bold text-white">10+</div>
                 <div className="text-sm text-white/80 font-body">Anos de Arte</div>
               </div>
             </div>
