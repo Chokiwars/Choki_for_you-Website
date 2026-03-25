@@ -4,21 +4,23 @@ import Image from '../../../components/AppImage';
 import Button from '../../../components/ui/Button';
 import Icon from '../../../components/AppIcon';
 
+import SemImagem from '../../../assets/semimagem.png';
+
 const ArtistIntroduction = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const studioImages = [
   {
-    src: "https://images.unsplash.com/photo-1528387775599-6d62a86861a0",
+    image: SemImagem,
     alt: "Artist Choki painting in purple-themed studio with easel and colorful palette"
   },
   {
-    src: "https://images.unsplash.com/photo-1596653038131-330fa75d23ab",
+    image: SemImagem,
     alt: "Close-up of artist\'s hands mixing purple paint on palette with brushes"
   },
   {
-    src: "https://images.unsplash.com/photo-1716114543499-b428eaa6ef2b",
+    image: SemImagem,
     alt: "Artist\'s workspace showing purple paintings on easels and art supplies organized on table"
   }];
 
