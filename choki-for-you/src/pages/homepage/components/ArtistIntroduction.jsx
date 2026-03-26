@@ -160,7 +160,7 @@ const ArtistIntroduction = () => {
               <div className="relative bg-card rounded-2xl overflow-hidden shadow-purple">
                 <div className="aspect-[4/3] relative">
                   <Image
-                    src={studioImages?.[currentImageIndex]?.src}
+                    src={studioImages?.[currentImageIndex]?.image}
                     alt={studioImages?.[currentImageIndex]?.alt}
                     className="w-full h-full object-cover transition-all duration-700" />
 
