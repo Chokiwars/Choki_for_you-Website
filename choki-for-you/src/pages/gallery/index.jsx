@@ -8,6 +8,9 @@ import SortDropdown from './components/SortDropdown';
 import ViewToggle from './components/ViewToggle';
 import ArtworkGrid from './components/ArtworkGrid';
 import ArtworkModal from './components/ArtworkModal';
+import Footer from '../homepage/components/Footer';
+
+import SemImagem from '../../assets/semimagem.png';
 
 const Gallery = () => {
   const [filters, setFilters] = useState({
@@ -35,7 +38,7 @@ const Gallery = () => {
   {
     id: 1,
     title: "Sonhos Violetas",
-    image: "https://images.unsplash.com/photo-1533158388470-9a56699990c6",
+    image: SemImagem,
     imageAlt: "Pintura abstrata com tons de roxo e violeta representando sonhos etéreos",
     medium: "Óleo sobre Tela",
     year: 2024,
@@ -51,15 +54,15 @@ const Gallery = () => {
     rating: 5,
     reviews: 12,
     gallery: [
-    "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=800&h=800&fit=crop",
-    "https://images.unsplash.com/photo-1710726981978-4730b7d3cc5b",
-    "https://images.unsplash.com/photo-1689850969146-43cd8e188bbf"]
+    SemImagem,
+    SemImagem,
+    SemImagem]
 
   },
   {
     id: 2,
     title: "Reflexões Urbanas",
-    image: "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800&h=800&fit=crop",
+    image: SemImagem,
     imageAlt: "Pintura contemporânea mostrando reflexos de luzes urbanas em superfícies molhadas",
     medium: "Acrílica",
     year: 2024,
@@ -77,7 +80,7 @@ const Gallery = () => {
   {
     id: 3,
     title: "Harmonia Natural",
-    image: "https://images.unsplash.com/photo-1549887534-1541e9326642?w=800&h=800&fit=crop",
+    image: SemImagem,
     imageAlt: "Aquarela delicada representando elementos naturais em tons suaves e orgânicos",
     medium: "Aquarela",
     year: 2023,
@@ -95,7 +98,7 @@ const Gallery = () => {
   {
     id: 4,
     title: "Geometria Emocional",
-    image: "https://images.unsplash.com/photo-1554020125-343189bba70d",
+    image: SemImagem,
     imageAlt: "Composição geométrica abstrata com formas angulares em tons de azul e roxo",
     medium: "Técnica Mista",
     year: 2024,
@@ -113,7 +116,7 @@ const Gallery = () => {
   {
     id: 5,
     title: "Memórias Fragmentadas",
-    image: "https://images.unsplash.com/photo-1710435796137-645262ec42d2",
+    image: SemImagem,
     imageAlt: "Colagem artística com fragmentos de imagens e texturas representando memórias",
     medium: "Colagem Digital",
     year: 2023,
@@ -131,7 +134,7 @@ const Gallery = () => {
   {
     id: 6,
     title: "Energia Cósmica",
-    image: "https://images.unsplash.com/photo-1572015305583-8482e539e7a0",
+    image: SemImagem,
     imageAlt: "Pintura abstrata com movimentos circulares representando energia cósmica em tons de roxo",
     medium: "Óleo sobre Tela",
     year: 2024,
@@ -149,7 +152,7 @@ const Gallery = () => {
   {
     id: 7,
     title: "Silêncio Dourado",
-    image: "https://images.unsplash.com/photo-1703593191751-9f77b98bdcd7",
+    image: SemImagem,
     imageAlt: "Pintura minimalista com tons dourados representando momentos de silêncio contemplativo",
     medium: "Folha de Ouro",
     year: 2023,
@@ -168,7 +171,7 @@ const Gallery = () => {
   {
     id: 8,
     title: "Ritmos da Cidade",
-    image: "https://images.unsplash.com/photo-1711299204012-cf23cb03544b",
+    image: SemImagem,
     imageAlt: "Representação dinâmica dos ritmos urbanos através de linhas e cores vibrantes",
     medium: "Acrílica",
     year: 2024,
@@ -530,73 +533,7 @@ const Gallery = () => {
           onFavorite={handleFavorite}
           isFavorited={selectedArtwork ? favorites?.includes(selectedArtwork?.id) : false} />
 
-
-        {/* Footer */}
-        <footer className="bg-text-primary text-white py-12 mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div className="col-span-1 md:col-span-2">
-                <div className="flex items-center space-x-3 mb-4">
-                  <div className="w-10 h-10 bg-gradient-cta rounded-lg flex items-center justify-center">
-                    <Icon name="Palette" size={24} className="text-white" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-heading font-heading-bold">
-                      Choki For You Official
-                    </h3>
-                    <p className="text-white/70 text-sm">Arte que toca a alma</p>
-                  </div>
-                </div>
-                <p className="text-white/80 mb-4 max-w-md">
-                  Cada obra é criada com paixão e dedicação, buscando estabelecer uma conexão única entre a arte e quem a contempla.
-                </p>
-                <div className="flex space-x-4">
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Icon name="Instagram" size={20} />
-                  </a>
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Icon name="Facebook" size={20} />
-                  </a>
-                  <a href="#" className="text-white/70 hover:text-white transition-colors">
-                    <Icon name="Twitter" size={20} />
-                  </a>
-                </div>
-              </div>
-              
-              <div>
-                <h4 className="font-heading font-heading-semibold mb-4">Navegação</h4>
-                <ul className="space-y-2 text-white/80">
-                  <li><a href="/gallery" className="hover:text-white transition-colors">Galeria</a></li>
-                  <li><a href="/shop" className="hover:text-white transition-colors">Loja</a></li>
-                  <li><a href="/commissions" className="hover:text-white transition-colors">Encomendas</a></li>
-                  <li><a href="/about-artist" className="hover:text-white transition-colors">Sobre</a></li>
-                </ul>
-              </div>
-              
-              <div>
-                <h4 className="font-heading font-heading-semibold mb-4">Contato</h4>
-                <ul className="space-y-2 text-white/80">
-                  <li className="flex items-center space-x-2">
-                    <Icon name="Mail" size={16} />
-                    <span>contato@chokiforyou.com</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Icon name="Phone" size={16} />
-                    <span>+55 11 99999-9999</span>
-                  </li>
-                  <li className="flex items-center space-x-2">
-                    <Icon name="MapPin" size={16} />
-                    <span>São Paulo, Brasil</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            
-            <div className="border-t border-white/20 mt-8 pt-8 text-center text-white/60">
-              <p>&copy; {new Date()?.getFullYear()} Choki For You Official. Todos os direitos reservados.</p>
-            </div>
-          </div>
-        </footer>
+        <Footer />
       </div>
     </>);
 
