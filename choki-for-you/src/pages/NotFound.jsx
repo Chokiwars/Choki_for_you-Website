@@ -21,19 +21,18 @@ const NotFound = () => {
         
         {/* 404 estilizado */}
         <div className="flex justify-center mb-6">
-          <h1 className="text-8xl font-bold bg-gradient-to-r from-pink-300 to-purple-200 bg-clip-text text-transparent drop-shadow-lg">
+          <h1 className="text-8xl font-bold bg-gradient-to-r from-purple-400 via-purple-200 to-purple-400 bg-clip-text text-transparent drop-shadow-lg">
             404
           </h1>
         </div>
 
         {/* Texto */}
         <h2 className="text-2xl font-semibold text-white mb-2">
-          Página não encontrada 😿
+          Erro ao acessar página
         </h2>
 
         <p className="text-white/80 mb-8 leading-relaxed">
-          Parece que você se perdeu no universo da Choki...  
-          mas calma, eu te ajudo a voltar 💜✨
+          Ops! Ocorreu um erro inesperado enquanto processávamos sua solicitação.
         </p>
 
         {/* Botões */}
