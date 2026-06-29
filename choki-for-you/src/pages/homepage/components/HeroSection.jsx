@@ -8,7 +8,7 @@ import Icon from '../../../components/AppIcon';
 import AkiraOnFire from '../../../assets/artworks/Akira_on_fire.jpeg';
 import SombraAkiraChoi from '../../../assets/artworks/Sombra_Akira_choi.jpeg';
 import AnyDtiys from '../../../assets/artworks/Any_dtiys.jpeg';
-import SombraAkiraShakan from '../../../assets/artworks/Sombra_Akira_shakan.jpeg';
+// import SombraAkiraShakan from '../../../assets/artworks/Sombra_Akira_shakan.jpeg';
 import SemImagem from '../../../assets/semimagem.png';
 
 const HeroSection = () => {
